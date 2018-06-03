@@ -1,0 +1,10 @@
+OLD Code 
+
+IF NOT it_bmqut[] IS INITIAL.
+    SELECT * FROM /bic/azc_bmctr00 INTO TABLE it_bmct
+             FOR ALL ENTRIES IN it_bmqut
+             WHERE "/bic/zcdatefrm = it_bmqut-/bic/zcdatefrm AND
+                   material = it_bmqut-material AND
+                   vendor = it_bmqut-vendor.
+				   
+				   
